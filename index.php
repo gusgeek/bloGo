@@ -13,18 +13,22 @@
     <meta name="description" content="<?php echo $results[0]['desc']; ?>">
     <title><?php echo $results[0]['sitio']; ?></title>
     <meta name="theme-color" content="#7952b3">
-
-  <!-- Bootstrap core CSS -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
-  <!-- Favicons -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script async src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" ></script>
+    <?php if (empty($results[0]['ga'])) {} else {} ?>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo $results[0]['ga']; ?>"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '<?php echo $results[0]['ga']; ?>');
+        </script>
+    <?php  } ?>
 
     <script type="text/javascript">
       function leerNota(id){ window.location.href = "./publicacion.php?nota="+id; }
     </script>
-    
 
     <style>
       .bd-placeholder-img {

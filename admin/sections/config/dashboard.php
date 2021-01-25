@@ -79,7 +79,7 @@
                 <input type="text" class="form-control" name="desc" id="desc" aria-describedby="emailHelp">
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Google Analitycs</label>
+                <label for="exampleInputEmail1" class="form-label">Google Analitycs ID de Medicion (gtag.js)</label>
                 <input type="text" class="form-control" name="ga" id="ga" aria-describedby="emailHelp">
               </div>
             </form>
