@@ -43,7 +43,20 @@
           font-size: 3.5rem;
         }
       }
-    </style>
+
+    .blog-post {
+      margin-bottom: 4rem;
+    }
+    .blog-post-title {
+      margin-bottom: .25rem;
+      font-size: 2.5rem;
+    }
+    .blog-post-meta {
+      margin-bottom: 1.25rem;
+      color: #727272;
+    }
+
+  </style>
     
   </head>
   <body>
@@ -55,12 +68,18 @@
           <p class="lead text-muted"><?php echo $results[0]['desc']; ?></p>
         </div>
       </div>
-    </section>
-
-      <div class="card" style="padding-left: 15px; padding-right: 15px; padding-bottom: 10px; margin-bottom: 25px;">
-        <h1 class="mt-5"><?php echo $blogPost[0]['title']; ?></h1>
-        <p class="lead"><?php echo $blogPost[0]['content']; ?></p>
+      <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+          <a class="p-2 link-secondary" href="./">Inicio</a>
+        </nav>
       </div>
+    </section>
+    <article class="blog-post">
+      <h2 class="blog-post-title"><?php echo $blogPost[0]['title']; ?></h2>
+      <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+      <p class="lead"><?php echo $blogPost[0]['content']; ?></p>
+    </article>
   </main>
+
   </body>
 </html>

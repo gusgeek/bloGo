@@ -44,40 +44,7 @@
     
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav me-auto mb-2 mb-md-0">
-        <li class="nav-item active">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-          <ul class="dropdown-menu" aria-labelledby="dropdown01">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
   <main class="container">
     <section class="py-5 text-center container">
       <div class="row py-lg-5">
@@ -86,29 +53,28 @@
           <p class="lead text-muted"><?php echo $results[0]['desc']; ?></p>
         </div>
       </div>
+
     </section>
     <div class="row" data-masonry='{"percentPosition": true }'>
-
-    <?php for ($i=0; $i < count($notes) ; $i++) { ?>
-      <div class="col-sm-6 col-lg-4 mb-4">
-        <div class="card">
-          <?php if (empty($notes[$i]['img'])) { } else { ?>
-            <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="./artworks/<?php echo $notes[$i]['img'] ?>">
-          <?php } ?>
-          <div class="card-body">
-            <h5 class="card-title"><?php echo $notes[$i]['title'] ?></h5>
-            <?php if (empty($notes[$i]['prologo'])) { } else { ?>
-            <p class="card-text"><?php echo $notes[$i]['prologo'] ?></p>
+      <?php for ($i=0; $i < count($notes) ; $i++) { ?>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="card">
+            <?php if (empty($notes[$i]['img'])) { } else { ?>
+              <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="./artworks/<?php echo $notes[$i]['img'] ?>">
             <?php } ?>
-          </div>
-          <div onclick="leerNota(<?php echo $notes[$i]['_id'] ?>);" class="card-footer text-muted alert-success text-center">
-            Leer Publicacion
+            <div class="card-body">
+              <h5 class="card-title"><?php echo $notes[$i]['title'] ?></h5>
+              <?php if (empty($notes[$i]['prologo'])) { } else { ?>
+              <p class="card-text"><?php echo $notes[$i]['prologo'] ?></p>
+              <?php } ?>
+            </div>
+            <div onclick="leerNota(<?php echo $notes[$i]['_id'] ?>);" class="card-footer text-muted alert-success text-center">
+              Leer Publicacion
+            </div>
           </div>
         </div>
-      </div>
-    <?php } ?>
+      <?php } ?>
     </div>
-      
   </main>
   </body>
 </html>
