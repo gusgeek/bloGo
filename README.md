@@ -34,7 +34,7 @@
 El Blog inicia limpio, no tendrá categorías ni publicaciones. Únicamente tendrá predeterminado un usuario admin para poder empezar la configuración. 
 
 ## Panel de Admin
-Ingresando en  <URL DE SITIO>/admin iniciara el LogIn de BloGo. El Nombre de usuario por Default sera admin y su contraseña admin, no te preocupes odras cambiarla y crear otros usuarios.
+Ingresando en  < URL DE SITIO >/admin iniciara el LogIn de BloGo. El Nombre de usuario por Default sera admin y su contraseña admin, no te preocupes odras cambiarla y crear otros usuarios.
 
 Una vez adentro es muy intuitivo, podras crear publicaciones, adjuntarles una caratula y prologo, administrarlas como tambien sus categorias. 
 
