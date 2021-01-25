@@ -37,7 +37,7 @@ Suba todos los archivos a su servidor e ingrese al directorio, asi de facil!
 ## Panel de Admin
 Ingresando en  < URL DE SITIO >/admin iniciara el LogIn de BloGo. El Nombre de usuario por Default sera admin y su contraseña admin, no te preocupes odras cambiarla y crear otros usuarios.
 
-Una vez adentro es muy intuitivo, podras crear publicaciones, adjuntarles una caratula y prologo, administrarlas como tambien sus categorias. 
+Una vez adentro es muy intuitivo, podras crear publicaciones, adjuntarles una caratula y prologo, administrar las entradas como sus categorias. 
 
 
 <p align="center">
