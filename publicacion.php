@@ -14,7 +14,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<?php echo $results[0]['desc']; ?>">
-    <title><?php echo $results[0]['sitio']; ?> - <?php echo $results[0]['sitio']; ?></title>
+    <title><?php echo $blogPost[0]['title']; ?> - <?php echo $results[0]['sitio']; ?></title>
+    <?php 
+
+        echo '<meta property="og:title" content="'.$blogPost[0]['title'].' - '.$results[0]['sitio'].'">';
+        echo '<meta property="og:description" content="'.$blogPost[0]['title'].' - '.$results[0]['sitio'].'">';
+        echo '<meta name="twitter:card" content="summary_large_image">';
+        echo '<meta name="description" content="'.$blogPost[0]['title'].' - '.$results[0]['sitio'].'">';
+
+    ?>
     <meta name="theme-color" content="#7952b3">
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="./assets/js/bootstrap.bundle.min.js"></script>

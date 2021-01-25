@@ -12,10 +12,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<?php echo $results[0]['desc']; ?>">
     <title><?php echo $results[0]['sitio']; ?></title>
+
+    <?php 
+
+        echo '<title>'.$shop[0]['nombreTienda'].'</title>';
+        echo '<meta property="og:title" content="Principal - '.$results[0]['sitio'].'">';
+        echo '<meta property="og:description" content="'.$results[0]['sitio'].'">';
+        echo '<meta name="twitter:card" content="summary_large_image">';
+        echo '<meta name="description" content="Principal - '.$results[0]['sitio'].'">';
+
+    ?>
+
     <meta name="theme-color" content="#7952b3">
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script async src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" ></script>
+
     <?php if (empty($results[0]['ga'])) {} else {} ?>
         <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo $results[0]['ga']; ?>"></script>
         <script>
@@ -54,7 +66,7 @@
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
           <h1 class="fw-light"><?php echo $results[0]['sitio']; ?></h1>
-          <p class="lead text-muted"><?php echo $results[0]['desc']; ?></p>
+          <p class="lead text-muted"><?php echo $results[0]['sitio']; ?></p>
         </div>
       </div>
 
