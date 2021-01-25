@@ -8,7 +8,7 @@
 # Bienvenido
 
   
- **BloGO** es un proyecto de entretenimiento personal. Esta pensado para ser desarmado y armado por otros usuarios de la comunidad. Basado en JS PHP y JSON, BloGO es una plataforma de Blog noSQL, quiere decir que no requiere MySQL o sus variantes para su funcionamiento buscando ser liviano y requerir lo basico para su funcionamiento, minimalista y super-facil de manejar.
+ **BloGO** es un proyecto personal.Basado en JS, PHP y JSON, BloGO es una plataforma de Blog noSQL, quiere decir que no requiere MySQL o sus variantes para su funcionamiento buscando ser liviano y requerir lo basico para su trabajar, minimalista y super-facil de manejar.
 <br><br>
 <p align="center">
 <strong> Recuerde que es una version pre-release, la misma tendra cambios radicales que requeriran para la primer version final, utilice este espacio y esta version para crear criticas constructivas de la plataforma y que mejoras quisiera agregarle  <br><br> <a href="https://github.com/gusgeek/bloGo/issues/new"> Ofrecer una Idea </a></strong>
@@ -17,7 +17,7 @@
 
 # Requisitos
 
- **PHP >= 7.3** para el correcto funcionamiento de la extencion WebP
+ **PHP >= 7.3** para el correcto funcionamiento de la extensión WebP
  
 # Mantenimiento
 
@@ -32,11 +32,12 @@
 
 # Como empiezo
 El Blog inicia limpio, no tendrá categorías ni publicaciones. Únicamente tendrá predeterminado un usuario admin para poder empezar la configuración. 
+Suba todos los archivos a su servidor e ingrese al directorio, asi de facil! 
 
 ## Panel de Admin
 Ingresando en  < URL DE SITIO >/admin iniciara el LogIn de BloGo. El Nombre de usuario por Default sera admin y su contraseña admin, no te preocupes odras cambiarla y crear otros usuarios.
 
-Una vez adentro es muy intuitivo, podras crear publicaciones, adjuntarles una caratula y prologo, administrarlas como tambien sus categorias. 
+Una vez adentro es muy intuitivo, podras crear publicaciones, adjuntarles una caratula y prologo, administrar las entradas como sus categorias. 
 
 
 <p align="center">
