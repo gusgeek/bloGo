@@ -20,20 +20,6 @@
 <br><br>
 </p>
 
-# Requisitos
-
- **PHP >= 7.3** para el correcto funcionamiento de la extensión WebP
- 
-# Mantenimiento
-
- **BloGO** recibirá actualizaciones y funciones en lo inmediato, partiendo de potenciar las características que ya trae. La versión inicial esta armada para dar una base robusta de la misma.
- 
-## Proximamente
-- Finalizacion del diseño principal y creacion de seccion Categorias
-- Integracion de sistema de comentarios
-- Creacion de API Rest
-- Creacion de SiteMap XML
-
 # Como empiezo
 El Blog inicia limpio, no tendrá categorías ni publicaciones. Únicamente tendrá predeterminado un usuario admin para poder empezar la configuración. 
 Suba todos los archivos a su servidor e ingrese al directorio, asi de facil! 
@@ -43,6 +29,19 @@ Ingresando en  < URL DE SITIO >/admin iniciara el LogIn de BloGo. El Nombre de u
 
 Una vez adentro es muy intuitivo, podras crear publicaciones, adjuntarles una caratula y prologo, administrar las entradas como sus categorias. 
 
+# Dev y Specs
+
+ **PHP >= 7.3** para el correcto funcionamiento de la extensión WebP
+ 
+## Mantenimiento
+
+ **BloGO** recibirá actualizaciones y funciones en lo inmediato, partiendo de potenciar las características que ya trae. La versión inicial esta armada para dar una base robusta de la misma.
+ 
+## Proximamente
+- Finalizacion del diseño principal y creacion de seccion Categorias
+- Integracion de sistema de comentarios
+- Creacion de API Rest
+- Creacion de SiteMap XML
 
 <p align="center">
   <br><br>
