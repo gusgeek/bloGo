@@ -31,7 +31,6 @@
 ## Proximamente
 - Finalizacion del diseño principal y creacion de seccion Categorias
 - Integracion de sistema de comentarios
-- Creacion de Mejora de SEO
 - Creacion de API Rest
 - Creacion de SiteMap XML
 
