@@ -15,7 +15,7 @@
 </p>
   
 <p align="center">
-  <a href="https://blogo-nosql.herokuapp.com/"> Ver Demo </a> | <a href="https://github.com/gusgeek/bloGo/issues/new"> Ofrecer una Idea </a> | <a href="https://github.com/gusgeek/bloGo/issues/new"> Obtener </a>
+  <a href="https://blogo-nosql.herokuapp.com/"> Ver Demo </a> | <a href="https://github.com/gusgeek/bloGo/issues/new"> Ofrecer una Idea </a> | <a href="https://github.com/gusgeek/bloGo/releases/latest"> Obtener </a>
   </strong>
 <br><br>
 </p>
