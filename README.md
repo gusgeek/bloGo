@@ -17,7 +17,7 @@
 
 # Requisitos
 
- **PHP >= 7.3** para el correcto funcionamiento de la extencion WebP
+ **PHP >= 7.3** para el correcto funcionamiento de la extensión WebP
  
 # Mantenimiento
 
