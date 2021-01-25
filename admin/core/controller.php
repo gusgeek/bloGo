@@ -52,6 +52,7 @@
 							"keywords" => $_POST['keywords'],
 							"category" => $_POST['categoria'],
 							"prologo" => $_POST['prologo'],
+							"date" => date("Y-m-d H:i:s"),
 							"img" => explode($artworkDir, $archivo)[1],
 							"status" => $_POST['status']
 						]);
@@ -72,6 +73,7 @@
 			  "keywords" => $_POST['keywords'],
 			  "category" => $_POST['categoria'],
 			  "prologo" => $_POST['prologo'],
+			  "date" => date("Y-m-d H:i:s"),
 			  "status" => $_POST['status']
 			]);
 

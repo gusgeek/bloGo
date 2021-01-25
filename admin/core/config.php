@@ -1,7 +1,8 @@
 <?php 
 	
 	session_start();
-
+	date_default_timezone_set('America/Argentina/Buenos_Aires');
+   	
    	// error_reporting(0);
 
    	$artworkDir = "../../artworks/";
