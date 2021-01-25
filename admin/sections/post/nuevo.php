@@ -45,7 +45,7 @@
 	    })
 	    .done(function(response){ 
 	    	var json = $.parseJSON(response);
-      		$("#Activity").load('./sections/post/editar.php?id='+json.data._id);
+      		 $("#Activity").load('./sections/post/editar.php?id='+json.data._id);
 	     })
 	    .fail(function(){ alert("Hubo un problema con la carga del Dato"); }) ;
 	}
@@ -89,6 +89,25 @@
 							<select class="custom-select" id="categoria" name="categoria">
 						  </select>
 						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="mb-3">
+							<label for="exampleInputEmail1" class="form-label">Prologo</label>
+							<input type="text" class="form-control" name="prologo" id="prologo" aria-describedby="emailHelp">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<label for="exampleInputEmail1" class="form-label">Caratula</label>
+						<br>
+						<div class="input-group mb-3">
+						  <div class="custom-file">
+						    <input type="file" class="custom-file-input" id="foto" name="foto" aria-describedby="inputGroupFileAddon01">
+						    <label class="custom-file-label" for="inputGroupFile01">Buscar Archivo</label>
+						  </div>
+						</div>
+						<small id="passwordHelpBlock" class="form-text text-muted">
+						  Solo se acepta PNG, JPG y GIF en formato 100x200
+						</small>
 					</div>
 					<div class="col-md-12">
 						<div class="mb-3">

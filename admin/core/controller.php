@@ -26,13 +26,57 @@
 
 	if (isset($_GET['InsertBlog'])) {
 
-		$results = 	$blogPost->insert([
-					  "title" => $_POST['titulo'],
-					  "content" => $_POST['contenido'],
-					  "keywords" => $_POST['keywords'],
-					  "category" => $_POST['categoria'],
-					  "status" => $_POST['status']
-					]);
+
+		if($_FILES["foto"]["size"] > 0){  
+
+			$filename = $_FILES["foto"]["name"];
+			$file_basename = substr($filename, 0, strripos($filename, '.'));
+			$file_ext = substr($filename, strripos($filename, '.')); 
+			$filesize = $_FILES["foto"]["size"];
+			$allowed_file_types = array('.png','.jpg','.gif','.jpeg'); 
+
+			if ((in_array($file_ext, $allowed_file_types)) && ($filesize < 100000000000)){   
+
+				$newfilename = md5(date('l jS \of F Y h:i:s A').$filename). $file_ext;
+
+				if (file_exists($artworkDir . $newfilename)){ $results = "";  echo "1";} 
+				else {  
+
+					if (move_uploaded_file($_FILES["foto"]["tmp_name"], $artworkDir . $newfilename)) {
+
+						$archivo =  webPConvert($artworkDir . $newfilename, 70);
+
+						$results = 	$blogPost->insert([
+							"title" => $_POST['titulo'],
+							"content" => $_POST['contenido'],
+							"keywords" => $_POST['keywords'],
+							"category" => $_POST['categoria'],
+							"prologo" => $_POST['prologo'],
+							"img" => explode($artworkDir, $archivo)[1],
+							"status" => $_POST['status']
+						]);
+
+			            unlink($artworkDir . $newfilename);
+
+					} else { $results = "";  echo "1";}
+
+				}
+
+			} else { $results = "";  echo "1";}
+
+		} else {	
+
+			$results = 	$blogPost->insert([
+			  "title" => $_POST['titulo'],
+			  "content" => $_POST['contenido'],
+			  "keywords" => $_POST['keywords'],
+			  "category" => $_POST['categoria'],
+			  "prologo" => $_POST['prologo'],
+			  "status" => $_POST['status']
+			]);
+
+		}
+
 
 			if ($results == "") { $jreturn = array( 'status' => 0 ); }
 			else { $jreturn = array( 'status' => 1, 'data' => $results ); }
@@ -63,18 +107,62 @@
 
 	if (isset($_GET['UpdatePostBlog'])) {
 
-		$results = 	$blogPost->where( '_id', '=', $_GET['UpdatePostBlog'] )->update([
+		if($_FILES["foto"]["size"] > 0){  
 
-					  "title" => $_POST['titulo'],
-					  "content" => $_POST['contenido'],
-					  "keywords" => $_POST['keywords'],
-					  "category" => $_POST['categoria'],
-					  "status" => $_POST['status']
+			$filename = $_FILES["foto"]["name"];
+			$file_basename = substr($filename, 0, strripos($filename, '.'));
+			$file_ext = substr($filename, strripos($filename, '.')); 
+			$filesize = $_FILES["foto"]["size"];
+			$allowed_file_types = array('.png','.jpg','.gif','.jpeg'); 
 
-					]);
+			if ((in_array($file_ext, $allowed_file_types)) && ($filesize < 100000000000)){   
 
-			if ($results == "") { $jreturn = array( 'status' => 0 ); }
-			else { $jreturn = array( 'status' => 1, 'data' => $results ); }
+				$newfilename = md5(date('l jS \of F Y h:i:s A').$filename). $file_ext;
+
+				if (file_exists($artworkDir . $newfilename)){ $results = ""; } 
+				else {  
+					
+					if (move_uploaded_file($_FILES["foto"]["tmp_name"], $artworkDir . $newfilename)) {
+
+						$archivo =  webPConvert($artworkDir . $newfilename, 70);
+
+							$results = 	$blogPost->where( '_id', '=', $_GET['UpdatePostBlog'] )->update([
+
+								"title" => $_POST['titulo'],
+								"content" => $_POST['contenido'],
+								"keywords" => $_POST['keywords'],
+								"category" => $_POST['categoria'],
+								"prologo" => $_POST['prologo'],
+								"img" => explode($artworkDir, $archivo)[1],
+								"status" => $_POST['status']
+
+							]);
+
+			            unlink($artworkDir . $newfilename);
+
+					} else { $results = ""; }
+
+				}
+
+			} else { $results = ""; }
+
+		} else {	
+
+			$results = 	$blogPost->where( '_id', '=', $_GET['UpdatePostBlog'] )->update([
+
+			  "title" => $_POST['titulo'],
+			  "content" => $_POST['contenido'],
+			  "keywords" => $_POST['keywords'],
+			  "category" => $_POST['categoria'],
+			  "prologo" => $_POST['prologo'],
+			  "status" => $_POST['status']
+
+			]);
+
+		}
+
+		if ($results == "") { $jreturn = array( 'status' => 0 ); }
+		else { $jreturn = array( 'status' => 1, 'data' => $results ); }
 		
 	    echo json_encode($jreturn, true) ;
 
