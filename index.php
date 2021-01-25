@@ -15,7 +15,6 @@
 
     <?php 
 
-        echo '<title>'.$shop[0]['nombreTienda'].'</title>';
         echo '<meta property="og:title" content="Principal - '.$results[0]['sitio'].'">';
         echo '<meta property="og:description" content="'.$results[0]['sitio'].'">';
         echo '<meta name="twitter:card" content="summary_large_image">';
