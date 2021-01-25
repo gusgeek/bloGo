@@ -8,7 +8,7 @@
 # Bienvenido
 
   
- **BloGO** es un proyecto de entretenimiento personal. Esta pensado para ser desarmado y armado por otros usuarios de la comunidad. Basado en JS PHP y JSON, BloGO es una plataforma de Blog noSQL, quiere decir que no requiere MySQL o sus variantes para su funcionamiento buscando ser liviano y requerir lo basico para su funcionamiento, minimalista y super-facil de manejar.
+ **BloGO** es un proyecto personal.Basado en JS, PHP y JSON, BloGO es una plataforma de Blog noSQL, quiere decir que no requiere MySQL o sus variantes para su funcionamiento buscando ser liviano y requerir lo basico para su trabajar, minimalista y super-facil de manejar.
 <br><br>
 <p align="center">
 <strong> Recuerde que es una version pre-release, la misma tendra cambios radicales que requeriran para la primer version final, utilice este espacio y esta version para crear criticas constructivas de la plataforma y que mejoras quisiera agregarle  <br><br> <a href="https://github.com/gusgeek/bloGo/issues/new"> Ofrecer una Idea </a></strong>
