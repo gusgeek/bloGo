@@ -30,7 +30,7 @@
 
     ?>
     <meta name="theme-color" content="#7952b3">
-    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script async src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" ></script>
     <?php if (empty($results[0]['ga'])) {} else { ?>
