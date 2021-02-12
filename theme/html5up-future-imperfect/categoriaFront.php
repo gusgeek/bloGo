@@ -1,3 +1,5 @@
+
+
 <body class="is-preload">
 
 	<div id="wrapper">
@@ -20,25 +22,27 @@
 				</ul>
 			</section>
 		</section>
-
 		<div id="main">
-
-			<center><h3>Listado de Categorias</h3></center>
+			
+			<center><h3>Publicaciones de la categoria <?php  echo $blogCategorias[0]['title'] ?></h3></center>
 			<hr>
 			<section>
 				<ul class="posts">
-					<?php for ($i=0; $i < count($blogCategorias) ; $i++) {	if ($blogCategorias[$i]['status'] == 1) { ?>
-					
+
+					<?php for ($i=0; $i < count($notes) ; $i++) { ?>
+						
 						<li>
 							<article>
 								<header>
-									<h3><a href="./categoria?id=<?php echo $blogCategorias[$i]['_id']; ?>"><?php echo $blogCategorias[$i]['title']; ?></a></h3>
+									<h3><a href="./publicacion?id=<?php echo $notes[$i]['_id'] ?>"><?php echo $notes[$i]['title']; ?></a></h3>
+									<?php echo $notes[$i]['prologo'] ?>
 								</header>
 								
 							</article>
 						</li>
 
-					<?php } } ?>
+					<?php } ?>
+					
 				</ul>
 			</section>
 		</div>
