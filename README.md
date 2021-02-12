@@ -31,7 +31,7 @@ Una vez adentro es muy intuitivo, podras crear publicaciones, adjuntarles una ca
 # Dev y Specs
 
  **PHP >= 7.2** 
-  - Se requiere la extencion GD de PHP para poder subir imagenes como caratula en las Publicaciones
+  - Se requiere la extension GD de PHP para poder subir imagenes como caratula en las Publicaciones
  
 ## Mantenimiento
 
