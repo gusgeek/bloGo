@@ -2,16 +2,13 @@
 
   include('kernel.php');
 
-  $results = $blogConfig->fetch();
   $blogCategorias = $blogCategorias->fetch();
   $blogPost = $blogPost
           ->where( '_id', '=', $_GET['nota'] )
           ->where( 'status', '=', 1 )
           ->fetch();
 
-          if(empty($blogPost)){
-            header('Location: ./');
-          }
+          if(empty($blogPost)){  header('Location: ./'); }
 
 ?>
 <!DOCTYPE html>

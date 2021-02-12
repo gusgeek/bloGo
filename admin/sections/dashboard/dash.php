@@ -71,7 +71,7 @@ $('#nueva').click(function(){
       <div class="col-sm card">
         <div class="separata"></div>
         <h5>Cantidad de Publicaciones</h5>
-        <div class="p"><div class="g"><center id='count' style='font-size: 35px'>2</center></div></div>
+        <div class="p"><div class="g"><center id='count' style='font-size: 35px'></center></div></div>
       </div>
     </div>
 

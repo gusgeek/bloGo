@@ -8,7 +8,10 @@
 
 		$blogPost = \SleekDB\SleekDB::store('blogPost', $adminDataDir);
 		$blogConfig = \SleekDB\SleekDB::store('blogConfig', $adminDataDir);
-		$blogUsers = \SleekDB\SleekDB::store('blogUsers', $adminDataDir);
+		// $blogUsers = \SleekDB\SleekDB::store('blogUsers', $adminDataDir);
 		$blogCategorias = \SleekDB\SleekDB::store('blogCategorias', $adminDataDir);
+
+		$results = $blogConfig->where( '_id', '=', 1 )->fetch()[0];
+  		
 
 ?>
