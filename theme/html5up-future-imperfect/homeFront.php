@@ -14,7 +14,7 @@
 			<section>
 				<ul class="links">
 					<li> <a href="./"> <h3>Inicio</h3> </a> </li>
-					<li> <a href="./categorias.php"> <h3>Categorias</h3> </a> </li>
+					<li> <a href="./categorias"> <h3>Categorias</h3> </a> </li>
 					
 				</ul>
 			</section>
@@ -27,7 +27,7 @@
 							<h2><a href="single.html"><?php echo $notes[$i]['title']; ?></a></h2>
 						</div>
 					</header>
-					<a href="single.html" class="image featured"><img src="artworks/<?php echo $notes[$i]['img']; ?>" alt=""></a>
+					<a href="publicacion?id=<?php echo $notes[$i]['_id']; ?>" class="image featured"><img src="artworks/<?php echo $notes[$i]['img']; ?>" alt=""></a>
 					<p><?php echo $notes[$i]['prologo']; ?></p>
 					<footer>
 						<ul class="actions">

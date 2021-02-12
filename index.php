@@ -4,9 +4,7 @@
   
   $notes = $blogPost->where( 'status', '=', 1 )->orderBy('DESC')->fetch();
   $blogCategorias = $blogCategorias->orderBy('DESC')->fetch();
-  // echo "<pre>";
-  // print_r($results);
-  // echo "</pre>";
+
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +22,7 @@
         echo '<meta name="twitter:card" content="summary_large_image">';
         echo '<meta name="description" content="Principal - '.$results['sitio'].'">';
 
-        include('./theme/'.$results['theme']."/header.php");
+        include('./theme/'.$results['theme']."/homeHeader.php");
 
         if (empty($results['ga'])) {} else { ?>
           <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo $results['ga']; ?>"></script>
@@ -39,6 +37,6 @@
 
   </head>
   
-  <?php include('./theme/'.$results['theme']."/front.php"); ?>
+  <?php include('./theme/'.$results['theme']."/homeFront.php"); ?>
   
 </html>
