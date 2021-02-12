@@ -5,6 +5,8 @@
   $notes = $blogPost->where( 'status', '=', 1 )->orderBy('DESC')->fetch();
   $blogCategorias = $blogCategorias->orderBy('DESC')->fetch();
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -12,6 +14,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="description" content="<?php echo $results['desc']; ?>">
     <title><?php echo $results['sitio']; ?></title>
 
@@ -23,6 +26,7 @@
         echo '<meta name="description" content="Principal - '.$results['sitio'].'">';
 
         include('./theme/'.$results['theme']."/homeHeader.php");
+
 
         if (empty($results['ga'])) {} else { ?>
           <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo $results['ga']; ?>"></script>
@@ -36,7 +40,7 @@
     <?php } ?>
 
   </head>
-  
+ 
   <?php include('./theme/'.$results['theme']."/homeFront.php"); ?>
   
 </html>

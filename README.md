@@ -7,7 +7,10 @@
 
 # Bienvenido
 
+
 Basado en JS, PHP y JSON, BloGO es una plataforma de Blog noSQL, quiere decir que no requiere MySQL o sus variantes para su funcionamiento buscando ser liviano y requerir lo basico para su trabajar, minimalista y super-facil de manejar.
+=======
+
 <br><br>
 <p align="center">
 <strong> Recuerde que es una version inicial, la misma tendra mejoras a futuro, utilice este espacio y esta version para crear criticas constructivas de la plataforma y que mejoras quisiera agregarle  <br><br> 
@@ -30,6 +33,8 @@ Una vez adentro es muy intuitivo, podras crear publicaciones, adjuntarles una ca
 
 # Dev y Specs
 
+=======
+
  **PHP >= 7.3** para el correcto funcionamiento de la extensión WebP
  
 ## Mantenimiento
@@ -41,6 +46,17 @@ Una vez adentro es muy intuitivo, podras crear publicaciones, adjuntarles una ca
 - Integracion de sistema de comentarios
 - Creacion de API Rest
 - Creacion de SiteMap XML
+
+
+=======
+# Como empiezo
+El Blog inicia limpio, no tendrá categorías ni publicaciones. Únicamente tendrá predeterminado un usuario admin para poder empezar la configuración. 
+Suba todos los archivos a su servidor e ingrese al directorio, asi de facil! 
+
+## Panel de Admin
+Ingresando en  < URL DE SITIO >/admin iniciara el LogIn de BloGo. El Nombre de usuario por Default sera admin y su contraseña admin, no te preocupes odras cambiarla y crear otros usuarios.
+
+Una vez adentro es muy intuitivo, podras crear publicaciones, adjuntarles una caratula y prologo, administrar las entradas como sus categorias. 
 
 <p align="center">
   <br><br>
