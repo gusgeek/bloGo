@@ -1,3 +1,4 @@
+/artworks/*.webp
 /admin/database/blogPost
 /admin/database/blogCategorias
 /admin/database/blogConfig/cache/*.json
