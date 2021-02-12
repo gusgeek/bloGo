@@ -28,7 +28,6 @@
 	// Obtengo la Publicacion
 
 	    $.ajax({ url : './core/kernel.php?GetThisPostBlog=<?php echo $_GET['id']; ?>', }).done(function(response){
-
 	    	var json = $.parseJSON(response);
 
 	    	document.getElementById('titulo').value = json[0].title;

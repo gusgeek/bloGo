@@ -1,4 +1,5 @@
+/artworks/*.webp
 /admin/database/blogPost
 /admin/database/blogCategorias
-/admin/database/blogConfig/cache
-/admin/database/blogUsers/cache
+/admin/database/blogConfig/cache/*.json
+/admin/database/blogUsers/cache/*.json

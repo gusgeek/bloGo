@@ -334,4 +334,29 @@
 	    echo json_encode($jreturn, true) ;
 
 	}
+
+	if (isset($_GET['SetTheme'])) {
+
+		if (!$blogConfig->fetch()) {
+
+			$results = 	$blogConfig->insert([
+				"theme" => $_GET['SetTheme']
+			]);
+
+		} else {
+
+			$results = 	$blogConfig->where( '_id', '=', 1 )->update([
+				"theme" => $_GET['SetTheme']
+			]);
+			
+		}
+
+			if ($results == "") { $jreturn = array( 'status' => 0 ); }
+			else { $jreturn = array( 'status' => 1, 'data' => $results ); }
+		
+	    echo json_encode($jreturn, true) ;
+
+	}
+
+
 ?>

@@ -30,8 +30,7 @@ Una vez adentro es muy intuitivo, podras crear publicaciones, adjuntarles una ca
 
 # Dev y Specs
 
- **PHP >= 7.0** 
-  - Se requiere la extension GD de PHP para poder subir imagenes como caratula en las Publicaciones
+ **PHP >= 7.3** para el correcto funcionamiento de la extensión WebP
  
 ## Mantenimiento
 

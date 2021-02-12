@@ -4,18 +4,13 @@
 
 	$(document).ready(function(){
 		$('#Activity').load('./sections/dashboard/dash.php');
-
       $('.nav-item>a').on('click', function(){
-
           $( "#container" ).hide(); 
           $( "#loadDiv" ).show(); 
-
           $('.nav-item>a').removeClass('active');
           $('#sidebarMenu').removeClass('show');
           $(this).addClass('active');
-
       });
-
 	});  
 
     function logOut(){
@@ -24,6 +19,7 @@
         $.ajax({ url : ajaxUrl })
         .done(function(response){  if (response == 1) { location.reload(); } })
         .fail(function(){ alert("Hubo un problema con la carga del Dato"); }) ;
+        
     }
 
   $('#dashboard').click(function(){
@@ -41,6 +37,9 @@
   $('#usersdash').click(function(){
     $("#Activity").load('./sections/users/dashboard.php');
   });
+  $('#themes').click(function(){
+    $("#Activity").load('./sections/themes/dashboard.php');
+  });
 </script>
 <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
   <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"><center><img src="./assets/img/logow.svg" width="70"></center></a>
@@ -57,7 +56,7 @@
   <div class="row">
     <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
       <div class="sidebar-sticky pt-3">
-        <ul class="nav flex-column">
+        <ul class="nav flex-column"><div class="separata"></div>
           <li class="nav-item"> <a class="nav-link active" aria-current="page" id="dashboard" href="#"> Dashboard </a> </li>
           <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
             <span>Blog</span>
@@ -68,6 +67,7 @@
             <span>Panel de Control</span>
           </h6>
           <li class="nav-item"> <a class="nav-link" aria-current="page" id="usersdash" href="#"> Usuarios </a> </li>
+          <li class="nav-item"> <a class="nav-link" aria-current="page" id="themes" href="#"> Temas </a> </li>
           <li class="nav-item"> <a class="nav-link" aria-current="page" id="configdash" href="#"> Configuracion </a> </li>
         </ul>
       </div>
