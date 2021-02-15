@@ -10,11 +10,8 @@
 Basado en JS, PHP y JSON, BloGO es una plataforma de Blog noSQL, quiere decir que no requiere MySQL o sus variantes para su funcionamiento buscando ser liviano y requerir lo basico para su trabajar, minimalista y super-facil de manejar.
 <br><br>
 <p align="center">
-<strong> Recuerde que es una version inicial, la misma tendra mejoras a futuro, utilice este espacio y esta version para crear criticas constructivas de la plataforma y que mejoras quisiera agregarle  <br><br> 
-</p>
-  
-<p align="center">
-  <a href="https://blogo-nosql.herokuapp.com/"> Ver Demo </a> | <a href="https://github.com/gusgeek/bloGo/issues/new"> Ofrecer una Idea </a> | <a href="https://github.com/gusgeek/bloGo/releases/latest"> Obtener </a>
+<strong>
+  <a href="https://blogo-nosql.herokuapp.com/"> Ver Demo </a> | <a href="https://github.com/gusgeek/bloGo/issues/new"> Ofrecer una Idea </a> | <a href="https://github.com/gusgeek/bloGo/releases/latest"> Obtener </a> | <a href="https://github.com/gusgeek/bloGo/tree/TemaBase"> Acerca de los Temas</a>
   </strong>
 <br><br>
 </p>
