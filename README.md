@@ -11,7 +11,7 @@ Basado en JS, PHP y JSON, BloGO es una plataforma de Blog noSQL, quiere decir qu
 <br><br>
 <p align="center">
 <strong>
-  <a href="https://blogo-nosql.herokuapp.com/"> Ver Demo </a> | <a href="https://github.com/gusgeek/bloGo/issues/new"> Ofrecer una Idea </a> | <a href="https://github.com/gusgeek/bloGo/releases/latest"> Obtener </a> | <a href="https://github.com/gusgeek/bloGo/tree/TemaBase"> Acerca de los Temas</a>
+<a href="https://github.com/gusgeek/bloGo-app/issues/new"> Ofrecer una Idea </a> | <a href="https://github.com/gusgeek/bloGo-app/releases/latest"> Obtener </a> | <a href="https://github.com/gusgeek/bloGo-app/tree/TemaBase"> Acerca de los Temas</a>
   </strong>
 <br><br>
 </p>
@@ -42,10 +42,10 @@ Una vez adentro es muy intuitivo, podras crear publicaciones, adjuntarles una ca
   <br><br>
   <strong>BloGo</strong> existe gracias a <a href="https://github.com/rakibtg/SleekDB">rakibtg/SleekDB</a> | <a href="https://github.com/twbs/bootstrap">twbs/bootstrap</a> | <a href="https://html5up.net/">HTML5up</a>
   <br><br>
-    <img src="https://img.shields.io/github/downloads/gusgeek/bloGo/total">  
-    <img src="https://img.shields.io/github/v/release/gusgeek/bloGo">  
-    <img src="https://img.shields.io/github/release-date/gusgeek/bloGo">  
-    <img src="https://img.shields.io/github/languages/code-size/gusgeek/bloGo">
+    <img src="https://img.shields.io/github/downloads/gusgeek/bloGo-app/total">  
+    <img src="https://img.shields.io/github/v/release/gusgeek/bloGo-app">  
+    <img src="https://img.shields.io/github/release-date/gusgeek/bloGo-app">  
+    <img src="https://img.shields.io/github/languages/code-size/gusgeek/bloGo-app">
   <br><br>
   <strong>:pencil2: con :heart:</strong>
 </p>
