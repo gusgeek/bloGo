@@ -1,37 +1,53 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/gusgeek/bloGo-app/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<p align="center">
+<img src="https://raw.githubusercontent.com/gusgeek/bloGo/produccion/admin/assets/img/logo.svg">
+  <br>
+  Un blog sencillo
+</p>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Bienvenido
 
-### Markdown
+Basado en JS, PHP y JSON, BloGO es una plataforma de Blog noSQL, quiere decir que no requiere MySQL o sus variantes para su funcionamiento buscando ser liviano y requerir lo basico para su trabajar, minimalista y super-facil de manejar.
+<br><br>
+<p align="center">
+<strong>
+<a href="https://github.com/gusgeek/bloGo-app/issues/new"> Ofrecer una Idea </a> | <a href="https://github.com/gusgeek/bloGo-app/releases/latest"> Obtener </a> | <a href="https://github.com/gusgeek/bloGo-thm"> Acerca de los Temas</a> | <a href="https://github.com/gusgeek/bloGo-app/tree/Artworks/Capturas">Ver Capturas</a> | <a href="https://blogo-nosql.herokuapp.com/">Demo</a>
+  </strong>
+<br><br>
+</p>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Como empiezo
+1) Sube los archivos a tu servidor
+2) Ingresa a el, automaticamente iniciara el Instalador, completa el Formulario y Listo!
 
-```markdown
-Syntax highlighted code block
+## Panel de Administracion
+Podras acceder a el ingresando en ```tuservidor.com/admin``` e ingresando tu nombre de usuario y contraseña.
+Una vez adentro es muy intuitivo, podras crear publicaciones, adjuntarles una caratula y prologo, administrar las entradas como sus categorias y temas. 
 
-# Header 1
-## Header 2
-### Header 3
+# Requerimentos
 
-- Bulleted
-- List
+**PHP >= 7.0** 
+  - Se requiere la extension **GD** de PHP para poder subir imagenes como caratula en las Publicaciones
+ 
+## Mantenimiento
 
-1. Numbered
-2. List
+ **bloGO** recibirá actualizaciones y funciones en lo inmediato, partiendo de potenciar las características que ya trae. 
+ 
+## Proximamente
+- Integracion de sistema de comentarios
+- Creacion de API Rest
+- Creacion de SiteMap XML
 
-**Bold** and _Italic_ and `Code` text
+<p align="center">
+  <br><br>
+  <strong>BloGo</strong> existe gracias a <a href="https://github.com/rakibtg/SleekDB">rakibtg/SleekDB</a> | <a href="https://github.com/twbs/bootstrap">twbs/bootstrap</a> | <a href="https://html5up.net/">HTML5up</a>
+  <br><br>
+    <img src="https://img.shields.io/github/downloads/gusgeek/bloGo-app/total">  
+    <img src="https://img.shields.io/github/v/release/gusgeek/bloGo-app">  
+    <img src="https://img.shields.io/github/release-date/gusgeek/bloGo-app">  
+    <img src="https://img.shields.io/github/languages/code-size/gusgeek/bloGo-app">
+  <br><br>
+  <strong>:pencil2: con :heart:</strong>
+</p>
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gusgeek/bloGo-app/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
