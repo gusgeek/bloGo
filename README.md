@@ -11,7 +11,7 @@ Basado en JS, PHP y JSON, BloGO es una plataforma de Blog noSQL, quiere decir qu
 <br><br>
 <p align="center">
 <strong>
-<a href="https://github.com/gusgeek/bloGo-app/issues/new"> Ofrecer una Idea </a> | <a href="https://github.com/gusgeek/bloGo-app/releases/latest"> Obtener </a> | <a href="https://github.com/gusgeek/bloGo-app/tree/TemaBase"> Acerca de los Temas</a>
+<a href="https://github.com/gusgeek/bloGo-app/issues/new"> Ofrecer una Idea </a> | <a href="https://github.com/gusgeek/bloGo-app/releases/latest"> Obtener </a> | <a href="https://github.com/gusgeek/bloGo-thm"> Acerca de los Temas</a> | <a href="https://github.com/gusgeek/bloGo-app/tree/Artworks/Capturas">Ver Capturas</a>
   </strong>
 <br><br>
 </p>
