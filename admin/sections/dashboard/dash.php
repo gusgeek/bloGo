@@ -40,8 +40,10 @@
                     <tbody id="search-results"> 
                     <?php 
                       for ($i=0; $i < count($dashboard['data']) ; $i++) { 
+
+                        if ($dashboard['data'][$i]['status'] == 1) { $st = "Publicado"; } elseif ($dashboard['data'][$i]['status'] == 3) { $st = "Borrador"; }
                         echo "<tr><th style='padding-left:9px;'>" .$dashboard['data'][$i]['title']. "</th>
-                              <th>".$dashboard['data'][$i]['status']."</th>
+                              <th>".$st."</th>
                               <th style='padding-right:9px;' class='text-center'><a href='".url_base."admin/publicaciones/editar/".$dashboard['data'][$i]['_id']."' class='fa fa-pencil-square-o' aria-hidden='true'></a></th></tr>";
                       } 
                     ?>

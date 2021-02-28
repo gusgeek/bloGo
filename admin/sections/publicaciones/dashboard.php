@@ -26,7 +26,8 @@
             </thead>
             <tbody id="search-results"> 
               <?php for ($i=0; $i < count($data) ; $i++) { 
-                echo "<tr><th style='padding-left:9px;'>".$data[$i]['title']."</th><th >".$data[$i]['status']."</th><th style='padding-right:9px;' class='text-center'><a href='".url_base."admin/publicaciones/editar/".$data[$i]['_id']."' class='fa fa-pencil-square-o' aria-hidden='true'></a></th></tr>";
+                if ($data[$i]['status'] == 1) { $st = "Publicado"; } elseif ($data[$i]['status'] == 3) { $st = "Borrador"; }
+                echo "<tr><th style='padding-left:9px;'>".$data[$i]['title']."</th><th>".$st."</th><th style='padding-right:9px;' class='text-center'><a href='".url_base."admin/publicaciones/editar/".$data[$i]['_id']."' class='fa fa-pencil-square-o' aria-hidden='true'></a></th></tr>";
               } ?>
             </tbody>
           </table>
