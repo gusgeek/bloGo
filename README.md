@@ -17,13 +17,12 @@ Basado en JS, PHP y JSON, BloGO es una plataforma de Blog noSQL, quiere decir qu
 </p>
 
 # Como empiezo
-El Blog inicia limpio, no tendrá categorías ni publicaciones. Únicamente tendrá predeterminado un usuario admin para poder empezar la configuración. 
-Suba todos los archivos a su servidor e ingrese al directorio, asi de facil! 
+1) Sube los archivos a tu servidor
+2) Ingresa a el, automaticamente iniciara el Instalador. Completa el Formulario y Listo!
 
-## Panel de Admin
-Ingresando en  < URL DE SITIO >/admin iniciara el LogIn de BloGo. El Nombre de usuario por Default sera admin y su contraseña admin, no te preocupes odras cambiarla y crear otros usuarios.
-
-Una vez adentro es muy intuitivo, podras crear publicaciones, adjuntarles una caratula y prologo, administrar las entradas como sus categorias. 
+## Panel de Administracion
+Podras acceder a el ingresando en ```tuservidor.com/admin``` e ingresando tu nombre de usuario y contraseña.
+Una vez adentro es muy intuitivo, podras crear publicaciones, adjuntarles una caratula y prologo, administrar las entradas como sus categorias y temas. 
 
 # Dev y Specs
 
