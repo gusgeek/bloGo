@@ -28,7 +28,7 @@
 				</header>
 			</div>
 			<article class="post">
-				<?php if (isset($blogPost['img'])) { echo '<span class="image featured"><img src="./artworks/'.$blogPost['img'].'" alt=""></span>'; } ?>
+				<?php if (isset($blogPost['img'])) { echo '<span class="image featured"><img src="./artworks/publicaciones/'.$blogPost['img'].'" alt=""></span>'; } ?>
 				<?php echo $blogPost['content'] ?>
 				<footer>
 					<ul class="stats">

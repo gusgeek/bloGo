@@ -28,7 +28,7 @@
 						</div>
 					</header>
 					<?php if (isset($notes[$i]['img'])) { ?>
-						<a href="publicacion?id=<?php echo $notes[$i]['_id']; ?>" class="image featured"><img src="artworks/<?php echo $notes[$i]['img']; ?>" alt=""></a>
+						<a href="publicacion?id=<?php echo $notes[$i]['_id']; ?>" class="image featured"><img src="artworks/publicaciones/<?php echo $notes[$i]['img']; ?>" alt=""></a>
 					<?php } ?>
 					<p><?php echo $notes[$i]['prologo']; ?></p>
 					<footer>
