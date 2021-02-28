@@ -17,7 +17,6 @@ Basado en JS, PHP y JSON, BloGO es una plataforma de Blog noSQL, quiere decir qu
 
 # Como empiezo
 1) Sube los archivos a tu servidor
-<br>
 2) Ingresa a el, automaticamente iniciara el Instalador, completa el Formulario y Listo!
 
 ## Panel de Administracion
