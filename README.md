@@ -4,7 +4,7 @@
   <img src="https://raw.githubusercontent.com/gusgeek/bloGo/produccion/admin/assets/img/logo.svg">
 </p>
 
-# Bienvenido
+# 
 
 Basado en JS, PHP y JSON, BloGO es una plataforma de Blog noSQL, quiere decir que no requiere MySQL o sus variantes para su funcionamiento buscando ser liviano y requerir lo basico para su trabajar, minimalista y super-facil de manejar.
 <br><br>
