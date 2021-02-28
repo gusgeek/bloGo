@@ -18,7 +18,7 @@ Basado en JS, PHP y JSON, BloGO es una plataforma de Blog noSQL, quiere decir qu
 
 # Como empiezo
 1) Sube los archivos a tu servidor
-2) Ingresa a el, automaticamente iniciara el Instalador. Completa el Formulario y Listo!
+2) Ingresa a el, automaticamente iniciara el Instalador, completa el Formulario y Listo!
 
 ## Panel de Administracion
 Podras acceder a el ingresando en ```tuservidor.com/admin``` e ingresando tu nombre de usuario y contraseña.
@@ -27,7 +27,7 @@ Una vez adentro es muy intuitivo, podras crear publicaciones, adjuntarles una ca
 # Dev y Specs
 
 **PHP >= 7.0** 
-  - Se requiere la extension GD de PHP para poder subir imagenes como caratula en las Publicaciones
+  - Se requiere la extension **GD** de PHP para poder subir imagenes como caratula en las Publicaciones
  
 ## Mantenimiento
 
