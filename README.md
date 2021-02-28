@@ -31,7 +31,7 @@ Una vez adentro es muy intuitivo, podras crear publicaciones, adjuntarles una ca
  
 ## Mantenimiento
 
- **BloGO** recibirá actualizaciones y funciones en lo inmediato, partiendo de potenciar las características que ya trae. La versión inicial esta armada para dar una base robusta de la misma.
+ **bloGO** recibirá actualizaciones y funciones en lo inmediato, partiendo de potenciar las características que ya trae. 
  
 ## Proximamente
 - Integracion de sistema de comentarios
