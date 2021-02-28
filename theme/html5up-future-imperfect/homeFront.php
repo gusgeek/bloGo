@@ -1,7 +1,7 @@
 <body class="is-preload">
 	<div id="wrapper">
 		<header id="header">
-			<h1><a href="index.html"><?php echo $results['sitio']; ?></a></h1>
+			<h1><a href="index.html"><?php echo siteName; ?></a></h1>
 			<nav class="main">
 				<ul>
 					<li class="menu">
@@ -24,10 +24,12 @@
 				<article class="post">
 					<header>
 						<div class="title">
-							<h2><a href="single.html"><?php echo $notes[$i]['title']; ?></a></h2>
+							<h2><a href="publicacion?id=<?php echo $notes[$i]['_id']; ?>"><?php echo $notes[$i]['title']; ?></a></h2>
 						</div>
 					</header>
-					<a href="publicacion?id=<?php echo $notes[$i]['_id']; ?>" class="image featured"><img src="artworks/<?php echo $notes[$i]['img']; ?>" alt=""></a>
+					<?php if (isset($notes[$i]['img'])) { ?>
+						<a href="publicacion?id=<?php echo $notes[$i]['_id']; ?>" class="image featured"><img src="artworks/<?php echo $notes[$i]['img']; ?>" alt=""></a>
+					<?php } ?>
 					<p><?php echo $notes[$i]['prologo']; ?></p>
 					<footer>
 						<ul class="actions">
@@ -43,8 +45,8 @@
 		<section id="sidebar">
 				<section id="intro">
 					<header>
-						<h2><?php echo $results['sitio']; ?></h2>
-						<p><?php echo $results['desc']; ?></p>
+						<h2><?php echo siteName; ?></h2>
+						<p><?php echo siteDesc; ?></p>
 					</header>
 				</section>
 				<section>
@@ -73,11 +75,9 @@
 				</section>
 		</section>
 	</div>
-
 	<script src="./theme/html5up-future-imperfect/assets/js/jquery.min.js"></script>
 	<script src="./theme/html5up-future-imperfect/assets/js/browser.min.js"></script>
 	<script src="./theme/html5up-future-imperfect/assets/js/breakpoints.min.js"></script>
 	<script src="./theme/html5up-future-imperfect/assets/js/util.js"></script>
 	<script src="./theme/html5up-future-imperfect/assets/js/main.js"></script>
-
 </body>

@@ -1,20 +1,21 @@
 <?php 
+
+
+	# PHP Configs
+
+   	//  error_reporting(0);
+		date_default_timezone_set('America/Argentina/Buenos_Aires');
+
+	# Upload Dir
+
+	   	$artworkDir = "../../artworks/";
+
+   	# SleekDB Configs
 	
-	session_start();
-	date_default_timezone_set('America/Argentina/Buenos_Aires');
-   	
-   	// error_reporting(0);
+		$configDB = [ 
+			"auto_cache" => false,
+			"cache_lifetime" => null,
+			"primary_key" => "_id" ];
+		
 
-   	$artworkDir = "../../artworks/";
-
-	//Directory a Database
-
-	$adminDataDir = "../database"; 
-
-	// INIT Database
-
-		$blogPost = \SleekDB\SleekDB::store('blogPost', $adminDataDir);
-		$blogConfig = \SleekDB\SleekDB::store('blogConfig', $adminDataDir);
-		$blogUsers = \SleekDB\SleekDB::store('blogUsers', $adminDataDir);
-		$blogCategorias = \SleekDB\SleekDB::store('blogCategorias', $adminDataDir);
 ?>

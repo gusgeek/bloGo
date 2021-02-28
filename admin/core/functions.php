@@ -1,6 +1,5 @@
 <?php 
 
-
 	function webPConvert($file, $compression_quality = 70){
 
 	    // check if file exists

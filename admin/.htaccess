@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteCond %{SCRIPT_FILENAME} !-d  
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^([A-Za-z0-9-]+)/?$ index.php?page=$1  [L]
+RewriteRule ^([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$ index.php?page=$1&section=$2 [L]
+RewriteRule ^([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$ index.php?page=$1&section=$2&id=$3 [L]

@@ -1,8 +1,8 @@
 <?php 
-
-	session_start();
+  include "./core/kernel.php";
+  session_start(); 
+  if ($initSetup == True) { include ('./setup/index.php'); } else {
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -11,34 +11,16 @@
     <meta name="description" content="Plataforma para la gestion de talleres">
     <meta name="author" content="Agustin Fernandez - github/gusgeek">
   	<title>bloGo - Admin Panel</title>
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/general.css">
-    <link rel="stylesheet" type="text/css" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="./assets/js/jquery-3.5.1.min.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
-    
-   
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
+    <link rel="stylesheet" href="<?= url_base ?>/admin/assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="<?= url_base; ?>/admin/assets/css/general.css">
+    <link rel="stylesheet" type="text/css" href="<?= url_base; ?>/admin/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="<?= url_base; ?>/admin/assets/summernote/dist/summernote-bs4.css" rel="stylesheet">
+    <script src="<?= url_base; ?>/admin/assets/js/jquery-3.5.1.min.js" type="text/javascript"></script>
+    <script src="<?= url_base; ?>/admin/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="<?= url_base; ?>/admin/assets/summernote/dist/summernote-bs4.js"></script>
+    <script src="<?= url_base; ?>/admin/assets/summernote/lang/summernote-es-ES.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {   
-
         var sideslider = $('[data-toggle=collapse-side]');
         var sel = sideslider.attr('data-target');
         var sel2 = sideslider.attr('data-target-2');
@@ -46,11 +28,14 @@
             $(sel).toggleClass('in');
             $(sel2).toggleClass('out');
         });
-        
-        <?php if (isset($_SESSION['idusuario'])) { ?> $('#bodyTag').load('./sections/core.php'); <?php } else { ?> $('#bodyTag').load('./sections/login/log.php'); <?php } ?>
-
       });  
     </script>
   </head>
-  <body class="sidebar-o sidebar-dark" id="bodyTag"></body>
+  <body class="sidebar-o sidebar-dark">
+    <?php 
+    if (isset($_SESSION['idusuario'])) {  include ('./sections/core.php'); } 
+    else { include ('./sections/login/log.php'); } 
+    ?>
+  </body>
 </html>
+<?php } ?>
