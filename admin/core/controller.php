@@ -185,6 +185,12 @@
 				return array('data' => $results, 'count' => count($results) );
             }
 
+			public static function RSS(){
+				$blogUsers = new DBController('blogConfig', "./admin/database");
+				$blogPost = new DBController('blogPost', "./admin/database");
+				return array('post' => $blogPost->findAll(), 'data' => $blogUsers->findAll());
+			}
+
 		}
 
 		class Installer{ }
