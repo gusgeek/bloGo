@@ -32,7 +32,7 @@ if ($initSetup == True) {
       //tengo que crear la entrada RSS en un item
       for ($i=0; $i < count($blogPost['post']) ; $i++) { 
          $titulo=clrAll($blogPost['post'][$i]['title']);         
-         $desc=clrAll($blogPost['post'][$i]['prologo']);
+         $desc=clrAll($blogPost['post'][$i]['content']);
          echo "<item>\n";
          echo "<title>$titulo</title>\n";
          echo "<description>$desc</description>\n";
