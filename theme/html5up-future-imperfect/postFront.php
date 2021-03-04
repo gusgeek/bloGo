@@ -22,8 +22,8 @@
 			<div class="main">
 				<header>
 					<div class="title">
-						<h2><?php echo siteName; ?></h2>
-						<p><?php echo siteDesc; ?></p>
+						<h2><?php echo $blogPost['title']; ?></h2>
+						<p><?php echo $blogPost['prologo']; ?></p>
 					</div>
 				</header>
 			</div>
