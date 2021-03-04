@@ -23,7 +23,7 @@ Basado en JS, PHP y JSON, BloGO es una plataforma de Blog noSQL, quiere decir qu
 Podras acceder a el ingresando en ```tuservidor.com/admin``` e ingresando tu nombre de usuario y contraseña.
 Una vez adentro es muy intuitivo, podras crear publicaciones, adjuntarles una caratula y prologo, administrar las entradas como sus categorias y temas. 
 
-### Accesso RSS
+### Acceso RSS
 Podras acceder al canal RSS simplemente debe de seguir la siguiente direccion ```tuservidor.com/rss```
 
 # Requerimentos
