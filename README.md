@@ -16,6 +16,8 @@ Basado en JS, PHP y JSON, BloGO es una plataforma de Blog noSQL, quiere decir qu
 </p>
 
 # Como empiezo
+
+Podras descargar el paquete desde las Release o obtenerlo por Composer con `composer create-project gusgeek/blogo-app`
 1) Sube los archivos a tu servidor
 2) Ingresa a el, automaticamente iniciara el Instalador, completa el Formulario y Listo!
 
