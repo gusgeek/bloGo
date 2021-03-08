@@ -1,0 +1,13 @@
+{
+    "name": "gusgeek/blogo-app",
+    "description": "bloGo es un sistema Blog noSQL",
+    "type": "project",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Agustin Fernandez",
+            "email": "aaferna@outlook.com.ar"
+        }
+    ],
+    "minimum-stability": "stable"
+}
